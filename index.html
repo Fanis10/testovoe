@@ -129,7 +129,7 @@
 				<div class="main__desc">
 					Мастер прибудет <span>через 15 – 30 минут, без повреждения</span> двери произведет вскрытие, доступно 24 часа в сутки
 				</div>
-				<div class="main__video video" data-src="https://www.youtube.com/embed/__-vp0g_BhA?autoplay=1">
+				<div class="main__video" data-modal="contactModal">
 					<div class="main__video-desc">
 						<div class="main__video-title">
 							<span>Посмотрите</span>
@@ -209,6 +209,28 @@
 	<script src="js/libs.min.js"></script>
 <script src="js/main.min.js"></script>
 
+
+	<div class="modal" id="contactModal">
+		<div class="modal__dialog">
+			<button type="button" class="_close-modal modal__close" data-bs-dismiss="modal" aria-label="Close">
+				<span>Закрыть видео</span>
+				<i>
+					<svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M8.81034 10.2624L15.6539 16.8036L17.0358 15.3578L10.2576 8.8791L17.0358 2.40038L15.6539 0.95459L8.81034 7.49577L1.96682 0.95459L0.5849 2.40038L7.36307 8.8791L0.5849 15.3578L1.96682 16.8036L8.81034 10.2624Z" fill="white"/>
+					</svg>
+				</i>
+			</button>
+			<div class="modal__content">
+				<div class="modal__video video">
+					<video muted autoplay controls="controls">
+						<source src="video/video.webm" type="video/webm">
+						<source src="video/video.mp4" type="video/mp4">
+						<source src="video/video.ogv" type="video/ogv">
+					</video>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 
 </html>
